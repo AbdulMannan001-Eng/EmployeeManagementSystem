@@ -79,3 +79,4 @@ C:\Users\PC\source\repos\EmployeeMgtSystem\EmployeeMgtSystem\obj\Debug\net8.0\re
 C:\Users\PC\source\repos\EmployeeMgtSystem\EmployeeMgtSystem\obj\Debug\net8.0\EmployeeMgtSystem.pdb
 C:\Users\PC\source\repos\EmployeeMgtSystem\EmployeeMgtSystem\obj\Debug\net8.0\EmployeeMgtSystem.genruntimeconfig.cache
 C:\Users\PC\source\repos\EmployeeMgtSystem\EmployeeMgtSystem\obj\Debug\net8.0\ref\EmployeeMgtSystem.dll
+C:\Users\PC\source\repos\EmployeeMgtSystem\EmployeeMgtSystem\obj\Debug\net8.0\EmployeeMgtSystem.sourcelink.json

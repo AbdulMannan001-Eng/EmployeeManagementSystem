@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace EmployeeManagementMVC.Models
+﻿
+using EmployeeMgtSystem.Models;
+using System.ComponentModel.DataAnnotations;
+namespace EmployeeMgtSystem.ViewModel
 {
-    public class Employee
+
+
+    public class EmployeeViewModel
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "First name is required.")]
         [RegularExpression(@"^[A-Za-z]{2,}(?: [A-Za-z]{2,})*$", ErrorMessage = "Only letters allowed (2–50 characters).")]

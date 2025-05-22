@@ -1,10 +1,11 @@
 ﻿using EmployeeManagementMVC.Models;
+using EmployeeMgtSystem.Models;
 
-namespace EmployeeManagementMVC.Services
+namespace EmployeeManagementModels.Services
 {
     public interface IEmployeeService
     {
-        Task AddAsync(Employee employee);
+        Task<bool> AddAsync(Employee employee);
         Task DeleteAsync(Guid id);
         Task<List<Employee>> GetAllAsync();
         Task<Employee?> GetByIdAsync(Guid id);

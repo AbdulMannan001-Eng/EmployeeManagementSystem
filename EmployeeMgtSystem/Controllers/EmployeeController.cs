@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using EmployeeManagementMVC.Models;
-using EmployeeManagementMVC.Services;
+using EmployeeManagementModels.Services;
 
 namespace EmployeeManagementMVC.Controllers
 {
@@ -30,12 +30,21 @@ namespace EmployeeManagementMVC.Controllers
         }
 
         public IActionResult Create() => View();
-
         [HttpPost]
         public async Task<IActionResult> Create(Employee employee)
         {
-            if (!ModelState.IsValid) return View(employee);
-            await _employeeService.AddAsync(employee);
+            if (!ModelState.IsValid)
+            {
+                return View(employee); // return view with validation errors
+            }
+            bool success = await _employeeService.AddAsync(employee);
+
+            if (!success)
+            {
+                ModelState.AddModelError("Email", "This email has already exist.");
+                return View(employee); // Return with error
+            }
+
             return RedirectToAction(nameof(Index));
         }
 

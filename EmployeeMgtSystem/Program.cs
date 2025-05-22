@@ -1,3 +1,4 @@
+using EmployeeManagementModels.Services;
 using EmployeeManagementMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
